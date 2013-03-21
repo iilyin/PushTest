@@ -27,6 +27,11 @@
     self.service = nil;
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:UIRemoteNotificationTypeAlert];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -93,5 +98,11 @@
     self.service.text = [dictionary valueForKey:@"service"];
 }
 
+- (void)updateDeviceToken:(NSString*)token
+{
+    self.oldToken.text = self.lbNewToken.text;
+    self.lbNewToken.text = token;
+    [self save];
+}
 
 @end

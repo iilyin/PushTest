@@ -50,4 +50,20 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+    NSString *token = [NSString new];
+    for (int i = 0; i < deviceToken.length; i++)
+    {
+        token = [token stringByAppendingFormat:@"%02x", ((unsigned char*)deviceToken.bytes)[i]];
+    }
+    [self.viewController updateDeviceToken:token];
+    NSLog(@"registered for APNS with token: %@.", token);
+}
+
+-(void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error
+{
+    [[[UIAlertView alloc] initWithTitle:@"Notification Register Failure" message:error.localizedDescription delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
+}
+
 @end

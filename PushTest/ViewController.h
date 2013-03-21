@@ -12,5 +12,6 @@
 
 - (void)save;
 - (void)load;
+- (void)updateDeviceToken:(NSString*)token;
 
 @end
