@@ -55,7 +55,7 @@
 
 - (void)sendRequest
 {
-    NSURLRequest *req = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@?old=%@&new=%@", self.service.text, self.oldToken.text, self.lbNewToken.text]]];
+    NSURLRequest *req = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@?oldId='%@'&newId='%@'", self.service.text, self.oldToken.text, self.lbNewToken.text]]];
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     [NSURLConnection sendAsynchronousRequest:req queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *resp, NSData *data, NSError *er) {
         [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
