@@ -40,7 +40,7 @@
 					<object class="IBUIButton" id="941507058">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{157, 155}, {143, 44}}</string>
+						<string key="NSFrame">{{157, 202}, {143, 44}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
@@ -75,7 +75,7 @@
 					<object class="IBUILabel" id="506597332">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{20, 20}, {97, 21}}</string>
+						<string key="NSFrame">{{20, 16}, {97, 21}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="529818117"/>
@@ -107,7 +107,7 @@
 					<object class="IBUILabel" id="529818117">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{125, 20}, {182, 21}}</string>
+						<string key="NSFrame">{{20, 39}, {280, 30}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="34708382"/>
@@ -121,14 +121,24 @@
 						<reference key="IBUITextColor" ref="845558421"/>
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">0</int>
-						<reference key="IBUIFontDescription" ref="897064842"/>
-						<reference key="IBUIFont" ref="774831071"/>
+						<int key="IBUINumberOfLines">2</int>
+						<int key="IBUILineBreakMode">1</int>
+						<object class="IBUIFontDescription" key="IBUIFontDescription" id="966165821">
+							<int key="type">1</int>
+							<double key="pointSize">13</double>
+						</object>
+						<object class="NSFont" key="IBUIFont" id="323947547">
+							<string key="NSName">Helvetica</string>
+							<double key="NSSize">13</double>
+							<int key="NSfFlags">16</int>
+						</object>
 						<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
+						<double key="preferredMaxLayoutWidth">280</double>
 					</object>
 					<object class="IBUILabel" id="34708382">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{20, 49}, {97, 21}}</string>
+						<string key="NSFrame">{{20, 71}, {97, 21}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="518494646"/>
@@ -149,7 +159,7 @@
 					<object class="IBUILabel" id="518494646">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{125, 49}, {182, 21}}</string>
+						<string key="NSFrame">{{20, 98}, {280, 30}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="985047580"/>
@@ -163,14 +173,17 @@
 						<reference key="IBUITextColor" ref="845558421"/>
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">0</int>
-						<reference key="IBUIFontDescription" ref="897064842"/>
-						<reference key="IBUIFont" ref="774831071"/>
+						<int key="IBUINumberOfLines">2</int>
+						<int key="IBUILineBreakMode">1</int>
+						<reference key="IBUIFontDescription" ref="966165821"/>
+						<reference key="IBUIFont" ref="323947547"/>
 						<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
+						<double key="preferredMaxLayoutWidth">280</double>
 					</object>
 					<object class="IBUIButton" id="675096220">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">-2147483356</int>
-						<string key="NSFrame">{{20, 155}, {134, 44}}</string>
+						<string key="NSFrame">{{20, 200}, {134, 44}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="941507058"/>
@@ -193,7 +206,7 @@
 					<object class="IBUITextField" id="396278073">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{20, 114}, {280, 30}}</string>
+						<string key="NSFrame">{{20, 162}, {280, 30}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="675096220"/>
@@ -230,7 +243,7 @@
 					<object class="IBUILabel" id="985047580">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{20, 85}, {280, 21}}</string>
+						<string key="NSFrame">{{20, 131}, {280, 21}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="396278073"/>
@@ -357,13 +370,13 @@
 						<reference key="object" ref="774585933"/>
 						<array class="NSMutableArray" key="children">
 							<reference ref="506597332"/>
-							<reference ref="529818117"/>
-							<reference ref="34708382"/>
-							<reference ref="518494646"/>
 							<reference ref="675096220"/>
 							<reference ref="941507058"/>
 							<reference ref="396278073"/>
 							<reference ref="985047580"/>
+							<reference ref="529818117"/>
+							<reference ref="518494646"/>
+							<reference ref="34708382"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -435,20 +448,6 @@
 				<object class="IBPartialClassDescription">
 					<string key="className">ViewController</string>
 					<string key="superclassName">UIViewController</string>
-					<dictionary class="NSMutableDictionary" key="actions">
-						<string key="onGenerate:">id</string>
-						<string key="onSend:">id</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="actionInfosByName">
-						<object class="IBActionInfo" key="onGenerate:">
-							<string key="name">onGenerate:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="onSend:">
-							<string key="name">onSend:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="lbNewToken">UILabel</string>
 						<string key="oldToken">UILabel</string>
