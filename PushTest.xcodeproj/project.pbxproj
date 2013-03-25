@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3330BC617007B5C00918F47 /* icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = B3330BC517007B5C00918F47 /* icon-57.png */; };
+		B3330BC817007B6700918F47 /* icon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = B3330BC717007B6700918F47 /* icon-114.png */; };
 		B3C3AE3D16F88A000046170D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C3AE3C16F88A000046170D /* UIKit.framework */; };
 		B3C3AE3F16F88A000046170D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C3AE3E16F88A000046170D /* Foundation.framework */; };
 		B3C3AE4116F88A000046170D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C3AE4016F88A000046170D /* CoreGraphics.framework */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B3330BC517007B5C00918F47 /* icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-57.png"; sourceTree = "<group>"; };
+		B3330BC717007B6700918F47 /* icon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-114.png"; sourceTree = "<group>"; };
 		B3C3AE3916F88A000046170D /* PushTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C3AE3C16F88A000046170D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B3C3AE3E16F88A000046170D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -56,6 +60,8 @@
 		B3C3AE3016F88A000046170D = {
 			isa = PBXGroup;
 			children = (
+				B3330BC717007B6700918F47 /* icon-114.png */,
+				B3330BC517007B5C00918F47 /* icon-57.png */,
 				B3C3AE4216F88A000046170D /* PushTest */,
 				B3C3AE3B16F88A000046170D /* Frameworks */,
 				B3C3AE3A16F88A000046170D /* Products */,
@@ -163,6 +169,8 @@
 				B3C3AE5116F88A000046170D /* Default@2x.png in Resources */,
 				B3C3AE5316F88A000046170D /* Default-568h@2x.png in Resources */,
 				B3C3AE5916F88A000046170D /* ViewController.xib in Resources */,
+				B3330BC617007B5C00918F47 /* icon-57.png in Resources */,
+				B3330BC817007B6700918F47 /* icon-114.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

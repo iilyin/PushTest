@@ -84,7 +84,13 @@
 - (void)save
 {
     NSString *folder = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-    NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:self.lbNewToken.text, @"newkey", self.oldToken.text, @"oldkey", self.service.text, @"service",nil];
+    NSMutableDictionary *dictionary = [NSMutableDictionary new];
+    if (self.lbNewToken.text)
+        [dictionary setValue:self.lbNewToken.text forKey:@"newkey"];
+    if (self.oldToken.text)
+        [dictionary setValue:self.oldToken.text forKey:@"oldkey"];
+    if (self.service.text)
+        [dictionary setValue:self.service.text forKey:@"service"];
     [dictionary writeToFile:[folder stringByAppendingPathComponent:@"settings.plist"] atomically:NO];
 }
 
@@ -96,6 +102,8 @@
     self.oldToken.text = [dictionary valueForKey:@"oldkey"];
     self.lbNewToken.text = [dictionary valueForKey:@"newkey"];
     self.service.text = [dictionary valueForKey:@"service"];
+    if (!self.service.text)
+        self.service.text = @"http://";
 }
 
 - (void)updateDeviceToken:(NSString*)token
